@@ -1,0 +1,8 @@
+#cloud-config
+repo_update: true
+repo_upgrade: all
+
+runcmd:
+  - cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+  - wget https://d1wk0tztpsntt1.cloudfront.net/linux/latest/install
+  - bash ./install
